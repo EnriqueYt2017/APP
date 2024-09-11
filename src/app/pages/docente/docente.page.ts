@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { NavController } from '@ionic/angular';
 @Component({
   selector: 'app-docente',
   templateUrl: './docente.page.html',
@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DocentePage implements OnInit {
 
-  constructor() { }
+  constructor(private navCtrl: NavController) { }
 
   ngOnInit() {
   }
 
+  informes() {
+    this.navCtrl.navigateForward(['/informe-d'])
+  }
+
+  generar() {
+    this.navCtrl.navigateForward(['/qr-d'])
+  }
+
+  cursos() {
+    this.navCtrl.navigateForward(['/cursos-d'])
+  }
 }

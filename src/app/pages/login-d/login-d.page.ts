@@ -15,7 +15,9 @@ export class LoginDPage implements OnInit {
   password:string=''
 
   ngOnInit() {
+    console.log('Componente inicializado');
   }
+  
   validar(){
     if (this.nombre=="profesor" && this.password=="profesor1") {
       console.log("Bienvenido")

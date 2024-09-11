@@ -68,6 +68,14 @@ const routes: Routes = [
     path: 'asistencia',
     loadChildren: () => import('./pages/asistencia/asistencia.module').then( m => m.AsistenciaPageModule)
   },
+  {
+    path: 'recuperar-password',
+    loadChildren: () => import('./pages/recuperar-password/recuperar-password.module').then( m => m.RecuperarPasswordPageModule)
+  },
+  {
+    path: 'repetir-password',
+    loadChildren: () => import('./pages/repetir-password/repetir-password.module').then( m => m.RepetirPasswordPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,26 +1,35 @@
 ion-content{
-    --background: linear-gradient(#01daf5, #019dfb);
+  --background: linear-gradient(#01daf5, #019dfb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.courses-container {
-    --background: linear-gradient(to bottom, #4a90e2, #007aff);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  ion-item {
-    margin-bottom: 10px;
-    border-radius: 40%;
-  }
-  
-  ion-label h2 {
-    font-size: 1.2em;
-    font-weight: bold;
-  }
-  
-  ion-label p {
-    font-size: 1em;
-    color: #555;
-  }
+.container {
+  width: 100%;
+  padding: 20px;
+}
+
+.attendance-card {
+  border-radius: 25px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  transition: transform 0.2s;
+}
+
+.attendance-card:hover {
+  transform: scale(1.05);
+}
+
+.attendance-card h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.attendance-card p {
+  font-size: 1em;
+  margin: 5px 0 0 0;
+}

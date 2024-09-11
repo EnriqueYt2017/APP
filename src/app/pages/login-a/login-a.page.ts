@@ -11,10 +11,11 @@ export class LoginAPage implements OnInit {
   constructor(private alertController: AlertController,
     private navCtrl: NavController) { }
 
-  nombre:string=''
-  password:string=''
+  nombre:string='alumno'
+  password:string='alumno'
 
   ngOnInit() {
+    console.log('Componente inicializado');
   }
 
   validar(){
@@ -36,6 +37,10 @@ export class LoginAPage implements OnInit {
     });
 
     await alert.present();
+  }
+
+  restablece() {
+    this.navCtrl.navigateForward(['/intro'])
   }
 
 }

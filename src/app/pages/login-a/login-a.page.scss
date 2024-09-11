@@ -2,7 +2,38 @@ ion-content{
     --background: linear-gradient(#01daf5, #019dfb);
 }
 
-.mi-iniciar {
-    text-align: center;
-    font-size: 50px;
-}
+  .login-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; bottom: 30%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  ion-item {
+    width: 100%;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+  }
+  
+  ion-label {
+    font-size: 1em;
+    color: #333;
+  }
+  
+  ion-input {
+    --padding-start: 10px;
+  }
+  
+  ion-icon {
+    color: #3880ff;
+  }
+  
+  .login-button {
+    margin-top: 20px;
+    --color: #fff;
+  }
+  
