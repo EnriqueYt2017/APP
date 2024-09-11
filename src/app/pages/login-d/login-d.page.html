@@ -1,0 +1,28 @@
+<ion-content [fullscreen]="true">
+  <p class="mi-iniciar">Iniciar sesion</p>
+
+  
+  <ion-label>
+    Email
+  </ion-label>
+  <ion-item>
+      <ion-input
+      placeholder="Ingrese email"
+      [(ngModel)]="nombre"></ion-input>
+    </ion-item>
+
+    <ion-label>
+      Contraseña
+    </ion-label>
+    <ion-item>
+      <ion-input  type="password"
+      placeholder="**********"
+      [(ngModel)]="password"></ion-input>
+    </ion-item>
+
+    <ion-button class="olvidar-password" expand="" fill="clear">Olvidaste Contraseña</ion-button>
+    <ion-button class="iniciar-sesion" >Iniciar sesión</ion-button>
+    <p class="registrar" shape="round" ><ion-button><p>No tienes cuenta?</p><p> Registrate</p></ion-button>
+
+  
+</ion-content>

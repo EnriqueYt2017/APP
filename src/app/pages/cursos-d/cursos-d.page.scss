@@ -1,0 +1,35 @@
+ion-content{
+    --background: linear-gradient(#01daf5, #019dfb);
+}
+/* Estilos personalizados */
+.gradient-background {
+    --background: linear-gradient(#01daf5, #019dfb);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .app-title {
+    font-size: large;
+    margin-bottom: 20px; /* Ajusta según sea necesario */
+  }
+
+  .attendance-list {
+    width: 80%;
+    margin-bottom: 20px; /* Ajusta el espacio según sea necesario */
+  }
+
+  .attendance-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; /* Ajusta el espacio entre elementos según sea necesario */
+  }
+
+  .button {
+    margin-top: 20px; /* Ajusta el espacio según sea necesario */
+  }
+  
+  /* Añade más CSS personalizado aquí si es necesario */

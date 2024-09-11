@@ -1,0 +1,49 @@
+ion-content{
+    --background: linear-gradient(#01daf5, #019dfb);
+}
+
+.mi-iniciar{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 50.8px;
+    text-align: center;
+    padding-top: 20px;
+}
+ion-label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: white;
+    padding-top: 20px;
+    background: blue;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+ion-item{
+    --background: transparent;
+}
+
+.registrar{   
+    border-color: black ;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10.7px;
+    text-align: center;
+    margin: 8px; 
+    border-radius: 80px;
+    --background: white;
+    --padding-start: 20px;
+    --padding-end: 20px;
+}
+
+.olvidar-password{
+    font-family: 'Poppins', sans-serif;
+    font-size: 9px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    --padding-start: 20px;
+    --padding-end: 20px;
+}
+

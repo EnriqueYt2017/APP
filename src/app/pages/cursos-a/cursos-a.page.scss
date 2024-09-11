@@ -1,0 +1,26 @@
+ion-content{
+    --background: linear-gradient(#01daf5, #019dfb);
+}
+
+.courses-container {
+    --background: linear-gradient(to bottom, #4a90e2, #007aff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  ion-item {
+    margin-bottom: 10px;
+    border-radius: 40%;
+  }
+  
+  ion-label h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  ion-label p {
+    font-size: 1em;
+    color: #555;
+  }

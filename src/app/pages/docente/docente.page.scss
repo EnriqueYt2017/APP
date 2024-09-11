@@ -1,0 +1,20 @@
+/* Estilos personalizados */
+ion-content {
+    --background: linear-gradient(to bottom, #01daf5, #019dfb);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .app-title {
+    font-size: large;
+    margin-bottom: 50px; /* Ajusta según sea necesario */
+  }
+
+  .button {
+    margin-bottom: 20px; /* Ajusta el espacio entre botones según sea necesario */
+    border-radius: 40%;
+  }
+  

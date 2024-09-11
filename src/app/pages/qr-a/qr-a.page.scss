@@ -1,0 +1,33 @@
+ion-content{
+    --background: linear-gradient(#01daf5, #019dfb);
+}
+
+.qr-container {
+    --background: linear-gradient(to bottom, #01daf5, #019dfb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .qr-content {
+    --background: linear-gradient(#01daf5, #019dfb);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .qr-code {
+    margin: 20px 0;
+  }
+  
+  .qr-code img {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }

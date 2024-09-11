@@ -1,0 +1,35 @@
+ion-content{
+    --background: linear-gradient(#01daf5, #019dfb);
+}
+
+ion-content h1{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 88px;
+  color: rgb(255, 255, 255);
+  padding: 70px;
+}
+
+ .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  ion-button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin: 40px; 
+    --border-radius: 80px;
+    --background: white;
+    --padding-start: 20px;
+    --padding-end: 20px;
+    --padding-top: 15px;
+    --padding-bottom: 15px;
+    font-size: 20px;
+  }
+   
+
+
