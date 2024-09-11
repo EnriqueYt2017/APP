@@ -40,7 +40,7 @@ export class LoginAPage implements OnInit {
   }
 
   restablece() {
-    this.navCtrl.navigateForward(['/intro'])
+    this.navCtrl.navigateForward(['/recuperar-password'])
   }
 
 }

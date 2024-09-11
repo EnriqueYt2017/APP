@@ -39,4 +39,7 @@ export class LoginDPage implements OnInit {
     await alert.present();
   }
 
+  restablece() {
+    this.navCtrl.navigateForward(['/recuperar-password'])
+  }
 }
