@@ -49,13 +49,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/qr-a/qr-a.module').then( m => m.QrAPageModule)
   },
   {
-<<<<<<< HEAD
-=======
-    path: '**',
-    loadChildren: () => import('./pages/notfound/notfound.module').then( m => m.NotfoundPageModule)
-  },
-  {
->>>>>>> 67017e48c12275a17f3f33e3758fb8073023a0fd
     path: 'login-d',
     loadChildren: () => import('./pages/login-d/login-d.module').then( m => m.LoginDPageModule)
   },

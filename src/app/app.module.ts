@@ -11,7 +11,6 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 
 
 @NgModule({
-<<<<<<< HEAD
   declarations: [
     AppComponent,
   ],
@@ -21,10 +20,6 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     AppRoutingModule,
     QRCodeModule
   ],
-=======
-  declarations: [AppComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
->>>>>>> 67017e48c12275a17f3f33e3758fb8073023a0fd
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, provideAnimationsAsync()],
   bootstrap: [AppComponent],
 })
