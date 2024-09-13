@@ -3,11 +3,16 @@
 <ion-content [fullscreen]="true">
   <h1 style="text-align: center;">Registr APP</h1>
 
+  <div class="role-selection">
     <ion-button expand="block" (click)="docente()">
-      <ion-icon slot="start" name="person-circle-outline"></ion-icon>
-      Docente
+      <ion-card-header>
+        <ion-card-title>Docente</ion-card-title>
+      </ion-card-header>
     </ion-button>
-  <ion-button expand="block" (click)="alumno()">
-    <ion-icon slot="start" name="person-circle-outline"></ion-icon>
-    Alumno</ion-button>
+    <ion-button expand="block" (click)="alumno()">
+      <ion-card-header>
+        <ion-card-title>Alumno</ion-card-title>
+      </ion-card-header>
+    </ion-button>
+  </div>
 </ion-content>

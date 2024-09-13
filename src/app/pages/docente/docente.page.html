@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Docente</ion-title>
+    <ion-title>Bienvenido {{usuario}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -8,7 +8,7 @@
   <ion-grid>
     <ion-row>
       <ion-col size="12">
-        <ion-card button (click)="cursos()">
+        <ion-card button (click)="cursolista()">
           <ion-card-header>
             <ion-card-title>Cursos</ion-card-title>
           </ion-card-header>
@@ -20,7 +20,7 @@
     </ion-row>
     <ion-row>
       <ion-col size="12">
-        <ion-card button (click)="generar()">
+        <ion-card button (click)="listacur()">
           <ion-card-header>
             <ion-card-title>Generar QR</ion-card-title>
           </ion-card-header>
@@ -32,7 +32,7 @@
     </ion-row>
     <ion-row>
       <ion-col size="12">
-        <ion-card button (click)="informes()">
+        <ion-card button (click)="listain()">
           <ion-card-header>
             <ion-card-title>Informes</ion-card-title>
           </ion-card-header>

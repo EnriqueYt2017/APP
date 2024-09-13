@@ -49,10 +49,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/qr-a/qr-a.module').then( m => m.QrAPageModule)
   },
   {
-    path: 'notfound',
-    loadChildren: () => import('./pages/notfound/notfound.module').then( m => m.NotfoundPageModule)
-  },
-  {
     path: 'login-d',
     loadChildren: () => import('./pages/login-d/login-d.module').then( m => m.LoginDPageModule)
   },
@@ -75,6 +71,22 @@ const routes: Routes = [
   {
     path: 'repetir-password',
     loadChildren: () => import('./pages/repetir-password/repetir-password.module').then( m => m.RepetirPasswordPageModule)
+  },
+  {
+    path: 'lista-cursos',
+    loadChildren: () => import('./pages/lista-cursos/lista-cursos.module').then( m => m.ListaCursosPageModule)
+  },
+  {
+    path: 'lista-informe',
+    loadChildren: () => import('./pages/lista-informe/lista-informe.module').then( m => m.ListaInformePageModule)
+  },
+  {
+    path: 'lista-cur',
+    loadChildren: () => import('./pages/lista-cur/lista-cur.module').then( m => m.ListaCurPageModule)
+  },
+  {
+    path: '**',
+    loadChildren: () => import('./pages/notfound/notfound.module').then( m => m.NotfoundPageModule)
   },
 ];
 

@@ -1,0 +1,28 @@
+ion-content{
+    --background: linear-gradient(#01daf5, #019dfb);
+}
+
+  
+  .lista-cursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  ion-card {
+    width: 90%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+  }
+  
+  ion-item {
+    --padding-start: 10px;
+    --padding-end: 10px;
+    --inner-border-width: 0px;
+    border-radius: 15px;
+  }
+  
+  ion-icon {
+    font-size: 50px;
+    color: #007aff;
+  }

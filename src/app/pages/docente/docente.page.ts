@@ -7,20 +7,24 @@ import { NavController } from '@ionic/angular';
 })
 export class DocentePage implements OnInit {
 
+  usuario:string=''
+
   constructor(private navCtrl: NavController) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    var x=localStorage.getItem("usuario")
+    this.usuario=x ?? ''
   }
 
-  informes() {
-    this.navCtrl.navigateForward(['/informe-d'])
+  listain() {
+    this.navCtrl.navigateForward(['/lista-cursos'])
   }
 
-  generar() {
-    this.navCtrl.navigateForward(['/qr-d'])
+  listacur() {
+    this.navCtrl.navigateForward(['/lista-informe'])
   }
 
-  cursos() {
-    this.navCtrl.navigateForward(['/cursos-d'])
+  cursolista() {
+    this.navCtrl.navigateForward(['/lista-cur'])
   }
 }

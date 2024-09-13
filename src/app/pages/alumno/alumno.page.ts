@@ -7,11 +7,14 @@ import { NavController } from '@ionic/angular';
 })
 export class AlumnoPage implements OnInit {
 
+  usuario:string=''
+
   constructor(private navCtrl: NavController) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    var x=localStorage.getItem("usuario")
+    this.usuario=x ?? ''
   }
-
 
   curso(){
     this.navCtrl.navigateForward(['/cursos-a'])

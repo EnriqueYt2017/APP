@@ -1,35 +1,27 @@
-ion-content{
-    --background: linear-gradient(#01daf5, #019dfb);
+ion-content {
+  --background: linear-gradient(to bottom, #0075D9, #49BFFF);
 }
-/* Estilos personalizados */
-.gradient-background {
-    --background: linear-gradient(#01daf5, #019dfb);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .app-title {
-    font-size: large;
-    margin-bottom: 20px; /* Ajusta según sea necesario */
-  }
 
-  .attendance-list {
-    width: 80%;
-    margin-bottom: 20px; /* Ajusta el espacio según sea necesario */
-  }
+ion-avatar img {
+  width: 100%;
+}
 
-  .attendance-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px; /* Ajusta el espacio entre elementos según sea necesario */
-  }
+ion-item {
+  --border-radius: 15px;
+  --inner-padding-end: 10px;
+  --inner-padding-start: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
 
-  .button {
-    margin-top: 20px; /* Ajusta el espacio según sea necesario */
-  }
-  
-  /* Añade más CSS personalizado aquí si es necesario */
+ion-button {
+  --border-radius: 15px;
+  margin-top: 20px;
+  background-color: #0075D9;
+  color: white;
+}
+
+ion-icon {
+  font-size: 50px;
+  color: #007aff;
+}

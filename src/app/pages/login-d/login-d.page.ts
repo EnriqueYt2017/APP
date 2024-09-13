@@ -15,11 +15,10 @@ export class LoginDPage implements OnInit {
   password:string=''
 
   ngOnInit() {
-    console.log('Componente inicializado');
   }
-  
+
   validar(){
-    if (this.nombre=="profesor" && this.password=="profesor1") {
+    if (this.nombre=="Freddy" && this.password=="profesor1") {
       console.log("Bienvenido")
       localStorage.setItem("usuario",this.nombre)
       this.navCtrl.navigateForward(['/docente'])
@@ -37,6 +36,9 @@ export class LoginDPage implements OnInit {
     });
 
     await alert.present();
+  }
+  restablecer(){
+    this.navCtrl.navigateForward(['/recuperar-password'])
   }
 
 }

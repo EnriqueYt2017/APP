@@ -11,15 +11,14 @@ export class LoginAPage implements OnInit {
   constructor(private alertController: AlertController,
     private navCtrl: NavController) { }
 
-  nombre:string='alumno'
-  password:string='alumno'
+  nombre:string=''
+  password:string=''
 
   ngOnInit() {
-    console.log('Componente inicializado');
   }
 
   validar(){
-    if (this.nombre=="alumno" && this.password=="alumno2") {
+    if (this.nombre=="Juan" && this.password=="alumno1") {
       console.log("Bienvenido")
       localStorage.setItem("usuario",this.nombre)
       this.navCtrl.navigateForward(['/alumno'])
@@ -38,9 +37,8 @@ export class LoginAPage implements OnInit {
 
     await alert.present();
   }
-
-  restablece() {
-    this.navCtrl.navigateForward(['/intro'])
+  restablecer(){
+    this.navCtrl.navigateForward(['/recuperar-password'])
   }
 
 }
