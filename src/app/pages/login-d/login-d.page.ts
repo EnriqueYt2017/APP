@@ -41,4 +41,7 @@ export class LoginDPage implements OnInit {
     this.navCtrl.navigateForward(['/recuperar-password'])
   }
 
+  restablece() {
+    this.navCtrl.navigateForward(['/recuperar-password'])
+  }
 }

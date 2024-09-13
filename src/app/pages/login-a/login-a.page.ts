@@ -37,7 +37,12 @@ export class LoginAPage implements OnInit {
 
     await alert.present();
   }
+<<<<<<< HEAD
   restablecer(){
+=======
+
+  restablece() {
+>>>>>>> 67017e48c12275a17f3f33e3758fb8073023a0fd
     this.navCtrl.navigateForward(['/recuperar-password'])
   }
 

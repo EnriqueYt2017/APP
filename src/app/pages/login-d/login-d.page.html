@@ -1,6 +1,7 @@
 <ion-content [fullscreen]="true" class="login-content" class="ion-padding">
   <p style="text-align: center; font-size: 40px; color: whitesmoke; justify-content: center;">Iniciar Sesión</p>
   <div class="login-container">
+<<<<<<< HEAD
     <ion-item lines="none">
       <ion-icon name="mail-outline" slot="start"></ion-icon>
       <ion-label position="stacked">Email</ion-label>
@@ -15,3 +16,25 @@
     <ion-button expand="full" class="login-button" (click)="restablecer()">Recuperar Contraseña</ion-button>
   </div>
 </ion-content>
+=======
+  <ion-label>
+    Email
+  </ion-label>
+  <ion-item lines="none">
+    <ion-icon name="mail-outline" slot="end"></ion-icon>
+    <ion-input type="email" placeholder="Ingresar email"[(ngModel)]="nombre"></ion-input>
+  </ion-item>
+  <ion-label>
+    Contraseña
+  </ion-label>
+  <ion-item lines="none">
+    <ion-icon name="lock-closed-outline" slot="end"></ion-icon>
+    <ion-input type="password" placeholder="********"[(ngModel)]="password"></ion-input>
+  </ion-item>
+  <ion-button  class="iniciar-sesion" click()="validar()" >Iniciar sesión</ion-button>
+  <ion-button class="olvidar-password" click()="restablece()" >Olvidaste Contraseña</ion-button>
+</div>
+
+  
+</ion-content>
+>>>>>>> 67017e48c12275a17f3f33e3758fb8073023a0fd
