@@ -7,13 +7,26 @@ import { NavController } from '@ionic/angular';
 })
 export class DocentePage implements OnInit {
 
-  usuario:string=''
+  nombreUsuario: string = ''; // Almacena el nombre del usuario (Alumno/Docente)
+  isMenuOpen: boolean = false; // Controla si el menú está abierto o cerrado
 
   constructor(private navCtrl: NavController) { }
 
-  ngOnInit(): void {
-    var x=localStorage.getItem("usuario")
-    this.usuario=x ?? ''
+  ngOnInit() {
+    // Obtener el nombre del usuario desde localStorage
+    const nombre = localStorage.getItem('usuario');
+    this.nombreUsuario = nombre ? nombre : 'Usuario';
+  }
+
+  // Alternar entre mostrar y ocultar el menú desplegable
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  // Función para cerrar sesión
+  logout() {
+    localStorage.clear(); // Limpiar los datos del usuario
+    this.navCtrl.navigateRoot(['/intro']); // Redirigir a la pantalla de introducción
   }
 
   listain() {

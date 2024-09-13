@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { RepetirPasswordPageRoutingModule } from './repetir-password-routing.module';
+import { RecuperaPageRoutingModule } from './recupera-routing.module';
 
-import { RepetirPasswordPage } from './repetir-password.page';
+import { RecuperaPage } from './recupera.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RepetirPasswordPageRoutingModule
+    RecuperaPageRoutingModule
   ],
-  declarations: [RepetirPasswordPage]
+  declarations: [RecuperaPage]
 })
-export class RepetirPasswordPageModule {}
+export class RecuperaPageModule {}

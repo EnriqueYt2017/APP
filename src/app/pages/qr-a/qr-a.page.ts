@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-qr-a',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QrAPage implements OnInit {
 
-  constructor() { }
+  constructor(private navCtrl: NavController) { }
 
   ngOnInit() {
   }
+
+  asistencia(){
+    this.navCtrl.navigateForward(['/asistencia-clases'])
+  }
+
 
 }

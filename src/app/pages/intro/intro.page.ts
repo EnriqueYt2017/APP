@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
+
 @Component({
   selector: 'app-intro',
   templateUrl: './intro.page.html',
@@ -10,14 +11,10 @@ export class IntroPage implements OnInit {
   constructor(private navCtrl: NavController) { }
 
   ngOnInit() {
-  }
-  
-  docente(){
-    this.navCtrl.navigateForward(['/login-d'])
-  }
-
-  alumno(){
-    this.navCtrl.navigateForward(['/login-a'])
+    // Temporizador de 3 segundos para redirigir a login
+    setTimeout(() => {
+      this.navCtrl.navigateForward(['/login']);
+    }, 3000);
   }
 
 }

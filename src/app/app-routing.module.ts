@@ -49,12 +49,16 @@ const routes: Routes = [
     loadChildren: () => import('./pages/qr-a/qr-a.module').then( m => m.QrAPageModule)
   },
   {
-    path: 'login-d',
-    loadChildren: () => import('./pages/login-d/login-d.module').then( m => m.LoginDPageModule)
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   },
   {
-    path: 'login-a',
-    loadChildren: () => import('./pages/login-a/login-a.module').then( m => m.LoginAPageModule)
+    path: 'recupera',
+    loadChildren: () => import('./pages/recupera/recupera.module').then( m => m.RecuperaPageModule)
+  },
+  {
+    path: 'repet',
+    loadChildren: () => import('./pages/repet/repet.module').then( m => m.RepetPageModule)
   },
   {
     path: 'asistencia-clases',
@@ -63,14 +67,6 @@ const routes: Routes = [
   {
     path: 'asistencia',
     loadChildren: () => import('./pages/asistencia/asistencia.module').then( m => m.AsistenciaPageModule)
-  },
-  {
-    path: 'recuperar-password',
-    loadChildren: () => import('./pages/recuperar-password/recuperar-password.module').then( m => m.RecuperarPasswordPageModule)
-  },
-  {
-    path: 'repetir-password',
-    loadChildren: () => import('./pages/repetir-password/repetir-password.module').then( m => m.RepetirPasswordPageModule)
   },
   {
     path: 'lista-cursos',

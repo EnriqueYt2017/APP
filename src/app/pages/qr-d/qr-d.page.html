@@ -6,12 +6,12 @@
 
 <ion-content class="ion-padding" fullscreen>
   <div class="qr-container">
-    <!-- QR Code -->
+
     <qrcode [qrdata]="'https://example.com'" [errorCorrectionLevel]="'M'" [width]="200"></qrcode>
     
     <p class="timer">Tiempo Restante {{ minutes }}:{{ seconds | number: '2.0' }}</p>
 
-    <!-- Button to stop the timer -->
+
     <ion-button expand="block" color="primary" (click)="cerrar()">Cerrar</ion-button>
   </div>
 </ion-content>
