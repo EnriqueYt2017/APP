@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Restablecer contraseña</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="reset-container">
+    <h2>¿Olvidaste tu contraseña?</h2>
+    <p>Introduce tu correo electrónico para recibir instrucciones de cómo restablecerla.</p>
+
+    <ion-item lines="none" class="input-item">
+      <ion-icon name="mail-outline" slot="start"></ion-icon>
+      <ion-label position="stacked">Correo electrónico</ion-label>
+      <ion-input type="email" placeholder="Ingresa tu correo" [(ngModel)]="email"></ion-input>
+    </ion-item>
+
+    <ion-button expand="full" class="centered-button" (click)="enviarCorreoDeRecuperacion()">Enviar</ion-button>
+  </div>
+</ion-content>

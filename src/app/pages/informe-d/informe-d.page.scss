@@ -1,3 +1,33 @@
-ion-content{
-    --background: linear-gradient(#01daf5, #019dfb);
+ion-content {
+  --background: linear-gradient(#01daf5, #019dfb);
+}
+
+ion-card {
+  margin: 20px;
+}
+
+ion-item h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+ion-item p {
+  font-size: 14px;
+  color: #666;
+}
+
+ion-grid {
+  margin-top: 20px;
+}
+
+ion-button {
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+
+.sticky-buttons {
+  position: sticky;
+  bottom: 0;
+  padding: 10px;
 }

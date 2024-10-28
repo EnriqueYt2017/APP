@@ -1,13 +1,20 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>QR_D</ion-title>
+    <ion-title>QR</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">QR_D</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding" fullscreen>
+  <div class="qr-container">
+    <qr-code [value]="valorQR" size="300" errorCorrectionLevel="M"></qr-code>
+
+    <ion-label>
+      <h2>{{ valorQRJSON[0].nombre }}</h2>
+      <p>{{ valorQRJSON[0].codigo }}</p>
+    </ion-label>
+
+    <p class="timer">Tiempo Restante {{ minutes }}:{{ seconds | number: '2.0' }}</p>
+
+    <ion-button expand="block" color="primary" (click)="cerrar()">Cerrar</ion-button>
+  </div>
 </ion-content>

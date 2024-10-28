@@ -1,0 +1,18 @@
+<ion-content [fullscreen]="true" class="login-content ion-padding">
+  <p style="text-align: center; font-size: 40px; color: whitesmoke;">Iniciar Sesión</p>
+  <div class="login-container">
+    <ion-item lines="none">
+      <ion-icon name="mail-outline" slot="start"></ion-icon>
+      <ion-label position="stacked">Correo</ion-label>
+      <ion-input type="text" placeholder="Ingrese su correo" [(ngModel)]="nombre"></ion-input>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+      <ion-label position="stacked">Contraseña</ion-label>
+      <ion-input type="password" placeholder="********" [(ngModel)]="password"></ion-input>
+    </ion-item>
+    <ion-button expand="full" class="login-button" (click)="validar()">Iniciar sesión</ion-button>
+    <ion-button expand="full" class="login-button" (click)="restablecer()">Olvidé mi Contraseña</ion-button>
+    <ion-button expand="full" class="login-button" (click)="registro()">Crear cuenta</ion-button>
+  </div>
+</ion-content>

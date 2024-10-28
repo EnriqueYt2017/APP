@@ -1,37 +1,21 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>asistencia</ion-title>
+    <ion-title>Asistencia</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <div class="container">
-    <ion-card class="attendance-card">
-      <ion-card-content>
-        <h2>Inglés elemental</h2>
-        <p>14 / 15 93.3%</p>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card class="attendance-card">
-      <ion-card-content>
-        <h2>Matemática aplicada</h2>
-        <p>6 / 6 100%</p>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card class="attendance-card">
-      <ion-card-content>
-        <h2>Mentalidad emprendedora</h2>
-        <p>7 / 7 100%</p>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card class="attendance-card">
-      <ion-card-content>
-        <h2>Principios de cristianismo</h2>
-        <p>2 / 2 100%</p>
-      </ion-card-content>
+<ion-content class="ion-padding">
+  <div class="lista-cursos">
+    <ion-card *ngFor="let curso of cursos">
+      <ion-item>
+        <ion-avatar slot="start">
+          <ion-icon name="calendar"></ion-icon>
+        </ion-avatar>
+        <ion-label>
+          <h2>{{ curso.nombre }}</h2>
+          <p>{{ curso.porcentaje }}</p>
+        </ion-label>
+      </ion-item>
     </ion-card>
   </div>
 </ion-content>

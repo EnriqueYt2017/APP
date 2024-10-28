@@ -1,35 +1,42 @@
-ion-content{
-    --background: linear-gradient(#01daf5, #019dfb);
+ion-content {
+  --background: linear-gradient(#01daf5, #019dfb);
 }
 
-ion-content h1{
+h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 88px;
-  color: rgb(255, 255, 255);
+  color: #fff;
   padding: 70px;
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
 }
 
- .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  
-  ion-button {
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    margin: 40px; 
-    --border-radius: 80px;
-    --background: white;
-    --padding-start: 20px;
-    --padding-end: 20px;
-    --padding-top: 15px;
-    --padding-bottom: 15px;
-    font-size: 20px;
-  }
-   
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 
+ion-spinner {
+  --color: #fff;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  animation: fadeIn 1.5s 0.5s forwards;
+}
 
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

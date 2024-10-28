@@ -1,18 +1,15 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>asistencia_clases</ion-title>
+    <ion-title>Asistencia de Clases</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Curso 1</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <p>Mateo Garcia</p>
-      <p>Inglés elemental 8:30 - 9:50</p>
-      <ion-button expand="full">Presente</ion-button>
-    </ion-card-content>
-  </ion-card>
+  <div class="asistencia-container">
+    <h2>{{ claseSeleccionada }}</h2>
+    <p>Profesor: {{ profesor }}</p>
+    <p>Hora: {{ hora }}</p>
+
+    <ion-button expand="full" (click)="marcarPresente()">Marcar Presente</ion-button>
+  </div>
 </ion-content>
