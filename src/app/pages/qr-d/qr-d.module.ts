@@ -3,18 +3,19 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
-
 import { QRDPageRoutingModule } from './qr-d-routing.module';
+import { QRCodeModule } from 'angularx-qrcode';
 
-import { QRDPage } from './qr-d.page';
+import { QrDPage } from './qr-d.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    QRDPageRoutingModule
+    QRDPageRoutingModule,
+    QRCodeModule,  // Importación QR única
   ],
-  declarations: [QRDPage]
+  declarations: [QrDPage]
 })
 export class QRDPageModule {}

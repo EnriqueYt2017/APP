@@ -1,23 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
+
 @Component({
   selector: 'app-intro',
   templateUrl: './intro.page.html',
   styleUrls: ['./intro.page.scss'],
 })
-export class IntroPage implements OnInit {
+export class IntroPage {
 
   constructor(private navCtrl: NavController) { }
 
-  ngOnInit() {
-  }
-  
-  docente(){
-    this.navCtrl.navigateForward(['/login-d'])
-  }
 
-  alumno(){
-    this.navCtrl.navigateForward(['/login-a'])
-  }
+  ionViewDidEnter() {
 
+    setTimeout(() => {
+      this.navCtrl.navigateRoot(['/login']); 
+    }, 3000); 
+  }
 }

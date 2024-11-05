@@ -7,20 +7,41 @@ import { NavController } from '@ionic/angular';
 })
 export class DocentePage implements OnInit {
 
+  nombreUsuario: string = ''; 
+  isMenuOpen: boolean = false; 
+
   constructor(private navCtrl: NavController) { }
 
   ngOnInit() {
+    
+    const nombre = localStorage.getItem('usuario');
+    this.nombreUsuario = nombre ? nombre : 'Usuario';
   }
 
-  informes() {
-    this.navCtrl.navigateForward(['/informe-d'])
+ 
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
   }
 
-  generar() {
-    this.navCtrl.navigateForward(['/qr-d'])
+ 
+  logout() {
+    localStorage.clear(); 
+    this.navCtrl.navigateRoot(['/intro']); 
   }
 
-  cursos() {
-    this.navCtrl.navigateForward(['/cursos-d'])
+  listain() {
+    this.navCtrl.navigateForward(['/lista-cursos'])
+  }
+
+  listacur() {
+    this.navCtrl.navigateForward(['/lista-informe'])
+  }
+
+  cursolista() {
+    this.navCtrl.navigateForward(['/lista-cur'])
+  }
+
+  clases() {
+    this.navCtrl.navigateForward(['/clases'])
   }
 }

@@ -1,35 +1,87 @@
 ion-content{
-    --background: linear-gradient(#01daf5, #019dfb);
+  --background: linear-gradient(#01daf5, #019dfb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-/* Estilos personalizados */
-.gradient-background {
-    --background: linear-gradient(#01daf5, #019dfb);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .app-title {
-    font-size: large;
-    margin-bottom: 20px; /* Ajusta según sea necesario */
-  }
 
-  .attendance-list {
-    width: 80%;
-    margin-bottom: 20px; /* Ajusta el espacio según sea necesario */
-  }
+ion-header {
+  --background: #0075D9;
+  color: white;
+}
 
-  .attendance-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px; /* Ajusta el espacio entre elementos según sea necesario */
-  }
+.student-list-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
 
-  .button {
-    margin-top: 20px; /* Ajusta el espacio según sea necesario */
-  }
-  
-  /* Añade más CSS personalizado aquí si es necesario */
+ion-list {
+  width: 90%;
+  max-width: 600px;
+}
+
+ion-avatar ion-icon {
+  font-size: 40px; 
+  color: #0075D9; 
+}
+
+ion-item {
+  --border-radius: 15px;
+  margin-bottom: 10px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #E0E0E0;
+  padding: 15px;
+}
+
+.sticky-button-container {
+  position: sticky;
+  bottom: 0;
+  padding: 15px;
+}
+
+ion-button {
+  --border-radius: 15px;
+  margin-top: 20px;
+  background-color: #0075D9;
+  color: white; 
+  font-weight: bold;
+  box-shadow: none;
+}
+
+ion-button:hover {
+  background-color: #005A9C; 
+  transform: scale(1.02);
+}
+
+ion-checkbox {
+  --background: #0075D9;
+  --border-color: #0075D9;
+}
+
+
+.delete-button {
+  background-color: white;
+  color: #0075D9;
+  border-radius: 50%; 
+  border: 1px solid #0075D9;
+  padding: 5px;
+  width: 45px; 
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s;
+  margin-top: -1px; 
+}
+
+.delete-button ion-icon {
+  font-size: 25px; 
+}
+
+.delete-button:hover {
+  transform: scale(1.1); 
+}

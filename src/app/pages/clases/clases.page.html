@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Clases</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="lista-cursos">
+    <ion-card *ngFor="let curso of cursos" (click)="cursolista(curso)">
+      <ion-item>
+        <ion-avatar slot="start">
+          <ion-icon name="book-outline"></ion-icon>
+        </ion-avatar>
+        <ion-label>
+          <h2>{{ curso.nombre }}</h2>
+          <p>{{ curso.codigo }}</p>
+        </ion-label>
+      </ion-item>
+    </ion-card>
+
+    <ion-card *ngIf="cursos.length === 0">
+      <ion-item>
+        <ion-label>
+          <h2>No hay clases disponibles</h2>
+        </ion-label>
+      </ion-item>
+    </ion-card>
+  </div>
+</ion-content>

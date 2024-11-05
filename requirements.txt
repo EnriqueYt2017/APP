@@ -1,0 +1,4 @@
+ng-qrcode
+@capacitor/android
+@capacitor-mlkit/barcode-scanning@next
+#pip install -r requirements.txt

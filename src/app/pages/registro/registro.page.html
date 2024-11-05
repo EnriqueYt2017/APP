@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Crear cuenta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="register-container">
+    <p style="text-align: center; font-size: 24px; color: #4a4a4a;">Registrar nueva cuenta</p>
+
+    <ion-item lines="none">
+      <ion-icon name="person-outline" slot="start"></ion-icon>
+      <ion-label position="stacked">Nombre</ion-label>
+      <ion-input type="text" placeholder="Ingrese su nombre" [(ngModel)]="nombre"></ion-input>
+    </ion-item>
+    
+    <ion-item lines="none">
+      <ion-icon name="person-outline" slot="start"></ion-icon>
+      <ion-label position="stacked">Apellido</ion-label>
+      <ion-input type="text" placeholder="Ingrese su apellido" [(ngModel)]="apellido"></ion-input>
+    </ion-item>
+    
+    <ion-item lines="none">
+      <ion-icon name="mail-outline" slot="start"></ion-icon>
+      <ion-label position="stacked">Correo</ion-label>
+      <ion-input type="email" placeholder="Ingrese su correo" [(ngModel)]="email"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+      <ion-label position="stacked">Contraseña</ion-label>
+      <ion-input type="password" placeholder="Ingrese su contraseña" [(ngModel)]="password"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+      <ion-label position="stacked">Confirmar contraseña</ion-label>
+      <ion-input type="password" placeholder="Confirme su contraseña" [(ngModel)]="confirmPassword"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+      <ion-label position="stacked">Seleccionar Rol</ion-label>
+      <ion-select [(ngModel)]="rol" interface="popover" placeholder="Elige un rol" cancelText="Cancelar" okText="Aceptar">
+        <ion-select-option value="alumno">Alumno</ion-select-option>
+        <ion-select-option value="docente">Docente</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-button expand="full" class="centered-button" (click)="registrar()">Registrarse</ion-button>
+  </div>
+</ion-content>

@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Detalle de Estudiantes</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-accordion-group *ngIf="clases.length > 0; else noEstudiantes">
+    <ion-accordion value="{{ i + 1 }}" *ngFor="let clase of clases; index as i">
+      <ion-item slot="header" color="light">
+        <ion-label>Clase {{ i + 1 }}</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <ion-list>
+          <ion-item *ngFor="let estudiante of clase.estudiantes">
+            <ion-avatar slot="start">
+              <ion-icon name="person-circle-outline"></ion-icon>
+            </ion-avatar>
+            <ion-label>
+              <h2>{{ estudiante.nombre }} {{ estudiante.apellido }}</h2>
+              <p>{{ estudiante.presente ? 'Presente' : 'Ausente' }}</p>
+            </ion-label>
+            <ion-checkbox slot="end" [checked]="estudiante.presente" disabled></ion-checkbox>
+          </ion-item>
+        </ion-list>
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
+  <ng-template #noEstudiantes>
+    <ion-card>
+      <ion-item>
+        <ion-label>
+          <h2>No hay estudiantes registrados para esta clase</h2>
+        </ion-label>
+      </ion-item>
+    </ion-card>
+  </ng-template>
+</ion-content>

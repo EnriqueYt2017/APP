@@ -1,13 +1,27 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>QR_D</ion-title>
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Código QR</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">QR_D</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
+  <ion-card *ngIf="valorQRJSON.length > 0">
+    <ion-item>
+      <ion-label>
+        <h2>{{ valorQRJSON[0].nombre }}</h2>
+        <p>Código: {{ valorQRJSON[0].codigo }}</p>
+        <p>Profesor: {{ valorQRJSON[0].profesor }}</p>
+        <p>Hora: {{ valorQRJSON[0].hora }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card *ngIf="valorQR">
+    <ion-item>
+      <ion-label>
+        <h2>Código QR:</h2>
+        <qrcode [qrdata]="valorQR" [width]="256"></qrcode>
+      </ion-label>
+    </ion-item>
+  </ion-card>
 </ion-content>

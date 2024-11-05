@@ -1,15 +1,30 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>qr_a</ion-title>
+    <ion-title class="title">Escanear QR</ion-title>
   </ion-toolbar>
 </ion-header>
-
-<ion-content class="qr-container">
-  <div class="qr-content">
-    <h2>Escanear QR</h2>
-    <div class="qr-code">
-      <img src="../../../assets/img/qr-3.png" alt="QR Code">
-    </div>
-    <ion-button style="color: whitesmoke;" expand="full">Escanear</ion-button>
+<ion-content class="ion-padding qr-page">
+  <div *ngIf="claseEscaneada && estudiante; else escanearQR">
+    <h2>{{ claseEscaneada.nombre }}</h2>
+    <p>Profesor: {{ claseEscaneada.profesor }}</p>
+    <p>Hora: {{ claseEscaneada.hora }}</p>
+    <ion-item>
+    <ion-label>Latitud {{latitud}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Longitud {{longitud}} </ion-label>
+    </ion-item>
+    <ion-button expand="full" (click)="obtenerCoordenadas()" >Verificar</ion-button>
+    <ion-button expand="full" [disabled]="isButtonDisabled" (click)="marcarPresente()">
+      Marcar Presente
+    </ion-button>
   </div>
+
+  <ng-template #escanearQR>
+    <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+      <ion-fab-button (click)="scan()" [disabled]="!isSupported">
+        <ion-icon name="scan"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </ng-template>
 </ion-content>
